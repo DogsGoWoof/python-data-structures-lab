@@ -116,8 +116,10 @@ print()
 def list_home_town_items():
     # your code here
     home_town_items = []
-    for key, value in home_town.items():
-        home_town_items.append(f'{key} = {value}')
+    # for key, value in home_town.items():
+    #     home_town_items.append(f'{key} = {value}')
+    for item in home_town:
+        home_town_items.append(item + ' = ' + str(home_town[item]))
     return home_town_items
 
 # Call the function and print the result
